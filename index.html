@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Makech Newya Temchi LL Agence?</title>
+    
+    <link rel="stylesheet" href="index.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header_text">Makech Newya Temchi LL Agence?</h1>
+        
+        <img src="cat.gif" alt="Waiting For Response Situation" style="width: 100%; max-width: 600px;">
+
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onclick="noPage()">No</button>
+        </div>
+    </div>
+
+    <script>
+        let clickCount = 0; 
+
+        function nextPage() {
+            window.location.href = 'yes.html'; 
+        }
+
+        function noPage() {
+            clickCount++; 
+
+            const noButton = document.getElementById("noButton");
+            noButton.style.transform = `scale(${1 + clickCount * 1})`; 
+
+            if (clickCount >= 5) {
+                window.location.href = 'no.html';
+            }
+        }
+    </script>
+</body>
+</html>
