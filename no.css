@@ -13,12 +13,12 @@ body {
 .container {
     text-align: center;
     background-color: #ffebee;
-    padding: 60px; /* Increase padding for a larger container */
+    padding: 60px; 
     border-radius: 20px;
     border: 3px solid #000000;
     box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
-    max-width: 900px; /* Maximum width for larger screens */
-    width: 90%; /* Adjust container width based on screen size */
+    max-width: 900px; 
+    width: 90%;
 }
 
 .header_text {
@@ -37,24 +37,24 @@ body {
 }
 
 .gif_container img {
-    width: 100%; /* Make the GIF responsive to width */
+    width: 100%; 
     height: auto;
-    max-width: 800px; /* Set maximum size for the GIF */
+    max-width: 800px;
     border-radius: 10px;
 }
 
-/* Media Queries for Phone Screens */
+
 @media (max-width: 768px) {
     .container {
-        padding: 40px; /* Reduce padding on smaller screens */
-        width: 100%; /* Adjust container width on smaller screens */
+        padding: 40px; 
+        width: 100%; 
     }
 
     .header_text {
-        font-size: 36px; /* Smaller text size for mobile screens */
+        font-size: 36px; 
     }
 
     .gif_container img {
-        max-width: 100%; /* Adjust max-width of the GIF to fit smaller screens */
+        max-width: 100%; 
     }
 }
